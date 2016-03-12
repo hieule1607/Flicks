@@ -17,27 +17,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.71294444759999998" blue="0.26277955250000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <view key="tableHeaderView" alpha="0.80000000000000004" contentMode="scaleToFill" id="2DS-sO-hhd">
-                                    <rect key="frame" x="0.0" y="64" width="320" height="36"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warning" id="jMz-AZ-Pfk">
-                                            <rect key="frame" x="88" y="3" width="30" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YMo-bu-Un9">
-                                            <rect key="frame" x="126" y="10" width="115" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="88" id="Xlv-Uc-Rs8" customClass="MovieCell" customModule="Flicks" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="128" width="320" height="88"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xlv-Uc-Rs8" id="kug-0c-7uc">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
@@ -79,7 +61,6 @@
                     <navigationItem key="navigationItem" title="Movies" id="CSJ-fg-EfM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="errorNetworkView" destination="2DS-sO-hhd" id="jxM-qC-7o3"/>
                         <outlet property="tableView" destination="hdw-YU-EfF" id="6bx-v8-bW8"/>
                     </connections>
                 </viewController>
@@ -165,7 +146,4 @@
             <point key="canvasLocation" x="100" y="306"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="warning" width="104" height="104"/>
-    </resources>
 </document>

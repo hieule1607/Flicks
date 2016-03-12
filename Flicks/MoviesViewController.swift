@@ -13,7 +13,6 @@ import MBProgressHUD
 class MoviesViewController: UIViewController, UITableViewDataSource , UITableViewDelegate , UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var errorNetworkView: UIView!
     
     var movies: [NSDictionary]?
     var searchController : UISearchController!
@@ -135,13 +134,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource , UITableVie
                 if let data = data {
                     if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                         data, options:[]) as? NSDictionary {
-                            self.errorNetworkView.hidden = true
+                            //self.errorNetworkView.hidden = true
                             self.movies = responseDictionary["results"] as? [NSDictionary]
                             self.tableView.reloadData()
                             
                     }
                 }else{
-                    self.errorNetworkView.hidden = false
+                    //self.errorNetworkView.hidden = false
 //                    self.showNotification()
                     print("There was a network error")
                 }
@@ -173,13 +172,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource , UITableVie
                 if let data = data {
                     if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                         data, options:[]) as? NSDictionary {
-                            self.errorNetworkView.hidden = true
+                            //self.errorNetworkView.hidden = true
                             self.movies = responseDictionary["results"] as? [NSDictionary]
                             self.tableView.reloadData()
                             
                     }
                 }else{
-                    self.errorNetworkView.hidden = false
+                    //self.errorNetworkView.hidden = false
 //                    self.showNotification()
                     print("There was a network error")
                 }

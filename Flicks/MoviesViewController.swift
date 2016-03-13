@@ -53,8 +53,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource , UITableVie
         refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
         
         tableView.insertSubview(refreshControl, atIndex: 0)
-        collectionView.insertSubview(refreshControl, atIndex: 0)
+
     }
+    
     @IBAction func showHideView(sender: AnyObject) {
         switch (sender.selectedSegmentIndex){
         case 0:
@@ -193,13 +194,14 @@ class MoviesViewController: UIViewController, UITableViewDataSource , UITableVie
                     }
                 }else{
                     self.errorNetworkView.hidden = false
-                    //                    self.showNotification()
+                   
                     print("There was a network error")
                 }
                 
                 // Reload the tableView now that there is new data
                 self.tableView.reloadData()
                 self.collectionView.reloadData()
+                
         })
         task.resume()
     }
@@ -240,7 +242,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource , UITableVie
                 
                 // Reload the tableView now that there is new data
                 self.tableView.reloadData()
-                self.collectionView.reloadData()
+                
                 
                 // Tell the refreshControl to stop spinning
                 refreshControl.endRefreshing()
@@ -279,13 +281,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource , UITableVie
         
         detailViewController.movie = movie
     }
-    /*
-    func showNotification() {
     
-    let errorNotifcation: UIAlertView = UIAlertView(title: "Network Error", message: "You can't access to Server. Please check connect to Internet!", delegate: self, cancelButtonTitle: "Done")
-    errorNotifcation.show()
-    }
-    */
     // Search
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)

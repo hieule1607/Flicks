@@ -26,7 +26,7 @@
                                 </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="zQT-SG-ihZ">
-                                <rect key="frame" x="0.0" y="95" width="320" height="473"/>
+                                <rect key="frame" x="0.0" y="95" width="320" height="419"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.71294444759999998" blue="0.26277955250000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OyK-OQ-4O4">
@@ -58,7 +58,7 @@
                                 </cells>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="Msb-tr-8F8">
-                                <rect key="frame" x="0.0" y="93" width="320" height="475"/>
+                                <rect key="frame" x="0.0" y="93" width="320" height="421"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.71294444759999998" blue="0.26277955250000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -99,7 +99,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view alpha="0.80000000000000004" contentMode="scaleToFill" id="3AF-jg-oE8">
+                            <view hidden="YES" alpha="0.80000000000000004" contentMode="scaleToFill" id="3AF-jg-oE8">
                                 <rect key="frame" x="0.0" y="93" width="320" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
